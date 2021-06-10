@@ -3,149 +3,157 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>portfolio</title>
+    <title>ポートフォリオ</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "./style.css">
+    <!--[if lt IE 9]>
+      <script src="http://api.html5media.info/1.2.2/html5media.min.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <div class = "page-header">
-      <h1>
-        Portfolio
-      </h1>
-    </div>
-
     <div class = "container">
-      <div id = "name">
-        <h3>
-          <ruby>
-            黒川
-            <rp>
-              <rt>
-                くろかわ
-              </rt>
-            </rp>
-            紫温
-            <rp>
-              <rt>
-                しおん
-              </rt>
-            </rp>
-          </ruby>
-        </h3>
+      <div class = "page-header row">
+        <div class = "col-md-6">
+          <h1>
+            Portfolio
+          </h1>
+        </div>
+        <div class = "col-md-6">
+          <h3>
+            <ruby>
+              黒川<rp><rt>くろかわ</rt></rp>紫温<rp><rt>しおん</rt></rp>
+            </ruby>
+          </h3>
+        </div>
       </div>
     </div>
 
     <div class = "container">
-      <div id = "history">
-        <h3>
-          略歴
-        </h3>
+      <div id = "name">
+      </div>
+    </div>
+
+    <div class = "row container">
+      <div class = "col-md-6">
+        <div class = "page-header">
+          <h3>
+            略歴
+          </h3>
+        </div>
         <ul>
           <li>2000/12/18 香川県高松市で誕生</li>
           <li>2016/4 香川高等専門学校 機械電子工学科に入学</li>
           <li>2021/3 香川高等専門学校 機械電子工学科を卒業</li>
           <li>2021/4 大阪府立大学 工学域 電気電子系学類 情報工学課程に入学</li>
-          <li>2023/3 大阪府立大学 工学域 電気電子系学類 情報工学課程を卒業</li>
+          <li>2023/3 大阪府立大学 工学域 電気電子系学類 情報工学課程を卒業予定</li>
         </ul>
       </div>
-    </div>
-
-    <div class = "container">
-      <div id = "skill">
-        <h3>
-          習得スキル
-        </h3>
+      <div class = "col-md-6">
+        <div class = "page-header">
+          <h3>
+            習得スキル
+          </h3>
+        </div>
         <ul>
           <li>HTML/CSS/JavaScript(Vue.js)</li>
-          <li>java</li>
+          <li>Java</li>
           <li>Linux</li>
-          <li>assembly</li>
+          <li>Assembly</li>
           <li>3DCAD(SOLIDWORKS,Autodesk Inventor)</li>
         </ul>
       </div>
     </div>
 
     <div class = "container">
-      <div id = "works">
+      <div class = "page-header">
         <h3>
-          成果物
+          作品
         </h3>
-        <div class="panel-group">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4>
-                <strong>
-                汎用人形決戦兵器 ファーレンハイト
-                </strong>
-              </h4>
-            </div>
-            <div class="panel-body">
-              <p>
-              下部と前方に計9個あるフォトセンサを用いて周囲の状況を把握し，ステッピングモータを2相励磁駆動させて走行する下図のような自走式ロボットをチームで制作．<br/>
-              自分はロボットのプログラムによる制御と基本戦略の考案，回路基板の作成等を行った．<br/>
+      </div>
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>
+              <strong>
+              汎用人形決戦兵器 ファーレンハイト
+              </strong>
+            </h4>
+          </div>
+          <div class="panel-body">
+            <p>
+            下部と前方に計9個あるフォトセンサを用いて周囲の状況を把握し，ステッピングモータを2相励磁駆動させて走行する下図のような自走式ロボットをチームで制作．<br/>
+            自分はロボットのプログラムによる制御と基本戦略の考案，回路基板の作成等を行った．<br/>
 
-                <a href="#rule" data-toggle="collapse">ルール等についての詳細</a>
-                <div id = "rule" class="collapse">
-                  <p>
-                  高専4年の時に，毎年変更されるルールに合わせてチームで自走式ロボットを作成する講義があり，その際に作成．規模の小さな<a href="https://official-robocon.com/kosen/">高専ロボコン</a>のようなものである．班員六人で一年かけて基本コンセプトの設定からハードウェアの設計・加工，設計書や動作説明書等の資料の作成まで行う．
-                  </p>
+              <a href="#rule" data-toggle="collapse">詳細</a>
+              <div id = "rule" class="collapse">
+                <p>
+                高専4年の時に，毎年変更されるルールに合わせてチームで自走式ロボットを作成する講義があり，その際に作成．規模の小さな<a href="https://official-robocon.com/kosen/">高専ロボコン</a>のようなものである．班員六人で一年かけて基本コンセプトの設定からハードウェアの設計・加工，設計書や動作説明書等の資料の作成まで行う．下部に作成したロボットのデバッグ中に撮影した動画を掲載する．
+                </p>
 
-                  <p>
-                  自分の年は「Wの喜劇」というお題で，図1のような板の上のゴール地点に，図2の「お宝」という金属塊を制限時間内にどれだけ多く置けるかというルールであった．<br/>
-                  図1の銀のテープがW状に貼られている範囲がゴール地点であり，その手前の線上になっている銀のテープはガイドである．また，お宝はフィールドの下半分の範囲に自由に配置することができる．一番手前の四角い枠状の範囲内にマシンを配置しなければならない．<br/>
-                  ロボットには様々な制限があり，幅と奥行きが20cm以内かつ予算は3万円，スタート地点は図1の下部にある四角の範囲内で主制御装置は「PIC16F628A-E/P」のみ，しかも使ってよい言語はアセンブラだけであった．
-                  </p>
+                <p>
+                自分の年は「Wの喜劇」というお題で，下図のような板の上のゴール地点に，動画内で出てくる「お宝」という金属塊を制限時間内にどれだけ多く置けるかというルールであった．<br/>
+                図の銀のテープがW状に貼られている範囲がゴール地点であり，その手前の線上になっている銀のテープはガイドである．また，お宝はフィールドの下半分の範囲に自由に配置することができる．一番手前の四角い枠状の範囲内にマシンを配置しなければならない．<br/>
+                ロボットには様々な制限があり，幅と奥行きが20cm以内かつ予算は3万円，スタート地点は図1の下部にある四角の範囲内で主制御装置は「PIC16F628A-E/P」のみ，しかも使ってよい言語はアセンブラだけであった．
+                </p>
+                <div class = "row">
+                  <div class = "col-md-6">
+                    <video class = "robot" autoplay muted playsinline src = "./image/video0.mp4" controls></video>
+                  </div>
+                  <div class = "col-md-6">
+                    <img src="./image/field.png" class="img-responsive field" alt="競技フィールド" >
+                    <div class = "caption">
+                      図1 競技フィールド
+                    </div>
+                  </div>
                 </div>
-              </p>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4>
-                <strong>
-                  seahorce -瀬戸内海をウマく繋ぐ海上タクシー予約システム-
-                </strong>
-              </h4>
-            </div>
-            <div class="panel-body">
-              <p>
-              卒業研究兼第31回全国高等専門学校プログラミングコンテストの自由部門に提出した作品．大会では優秀賞(準優勝)を受賞した．
-              </p>
-
-              <p>
-              この作品は，数々の美術館があり近年人気の「瀬戸内国際芸術祭」の会場となる瀬戸内の島々をより安く，効率的に移動するための海上タクシー予約システムである．<br/>
-              自分は主にフロントエンド班のリーダーとして開発に参加，システムのバックエンドはNode.jsで，フロントエンドはJS(Vue.js)とPHP(WordPress)で作製しHerokuにデプロイして公開した．
-              </p>
-
-              <p>
-              githubを用いて開発を行ったが規約等の関係上公開することができないため，詳細については以下の動画で説明する．3:44:34から3:54:33の約十分程度が自分の参加したチームの動画である．
-              </p>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kGZ-tcQfXwM?start=13473" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
+            </p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>
+              <strong>
+                seahorce -瀬戸内海をウマく繋ぐ海上タクシー予約システム-
+              </strong>
+            </h4>
+          </div>
+          <div class="panel-body">
+            <p>
+            卒業研究兼第31回全国高等専門学校プログラミングコンテストの自由部門に提出した作品．大会では優秀賞(準優勝)を受賞した．
+            </p>
+
+            <p>
+            この作品は，数々の美術館があり近年人気の「瀬戸内国際芸術祭」の会場となる瀬戸内の島々をより安く，効率的に移動するための海上タクシー予約システムである．<br/>
+            自分は主にフロントエンド班のリーダーとして開発に参加，システムのバックエンドはNode.jsで，フロントエンドはJS(Vue.js)とPHP(WordPress)で作製しHerokuにデプロイして公開した．
+            </p>
+
+            <p>
+            GitHubを用いて開発を行ったが規約等の関係上公開することができないため，詳細については以下の動画で説明する．3:44:34から3:54:33の約十分程度が自分の参加したチームの動画である．
+            </p>
+            <div class = "youtube">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kGZ-tcQfXwM?start=13473" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4>
-                <strong>
-                  相乗りの最適割り当て問題のモデル化及び近似解の導出
-                </strong>
-              </h4>
-            </div>
-            <div class="panel-body">
-              <p>
-              卒業研究の一環として作成．海上タクシー予約システムにおいて複数の客を複数の船に割り当てる際に発生する最適化問題のモデル化を，Dial-a-Ride問題と線型計画問題の概念を用いて行った．<br>
-              また，このモデルの評価のためにpythonを用いてテストデータの生成と評価実験を行った．
-              評価実験ではPuLPというモデラーを利用して線形計画問題を解いた．
-              </p>
-            </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>
+              <strong>
+                相乗りの最適割り当て問題のモデル化及び近似解の導出
+              </strong>
+            </h4>
+          </div>
+          <div class="panel-body">
+            <p>
+            卒業研究の一環として作成．海上タクシー予約システムにおいて複数の客を複数の船に割り当てる際に発生する最適化問題のモデル化を，Dial-a-Ride問題と線型計画問題の概念を用いて行った．<br>
+            また，このモデルの評価のためにpythonを用いてテストデータの生成と評価実験を行った．
+            評価実験ではPuLPというモデラーを利用して線形計画問題を解いた．
+            </p>
           </div>
         </div>
       </div>
     </div>
-
-
-    <!-- <img src="images/firefox-icon.png" alt="My test image"> -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
